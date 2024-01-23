@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body {
-  background-color: #0f0f1b;
-  font-family: "Poppins", serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #0f0f1b;
 }
 
 .body-text {
-  text-align: center;
   color: white;
   font-family: sans-serif;
   font-weight: 500;
@@ -20,35 +19,99 @@ body {
   margin: 7px;
 }
 
+.body-text h1 {
+  font-size: 20px;
+}
+
 .card {
+  margin: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card button {
+  color: #69699A;
+  background: none;
+  border: 1px solid #69699A;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.popular {
+  color: #69699A;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #69699A;
+  background: #A0E0B2;
+  width: 65px;
+  height: 23px;
+}
+
+.card button:hover {
+  background: white;
+}
+
+.card button p {
+  margin: 15px;
+}
+
+.box {
+  width: min-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-item {
   width: 185px;
   height: 185px;
-  flex-shrink: 0;
   border: none;
   border-radius: 10px;
   background-color: #171727;
   color: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
 }
 
-.card p {
-  margin: 20px;
-  width: 145px;
-  font-size: 16px;
-}
-
-.card:hover {
+.box-item:hover {
   background-color: #242486;
   transition: 1s;
   transition-duration: 1;
 }
 
-.body-element {
-  margin: 100px;
-  display: flex;
-  align-items: center;
+.box-item h2 {
+  margin: 5px;
+  font-size: 18px;
+  width: 145px;
+  font-weight: 600;
 }
 
-.header {
-  font-size: 20px;
+.box-item h3 {
+  margin: 5px;
+  font-size: 16px;
+  width: 145px;
+  font-weight: 500;
+}
+
+.box-item a {
+  color: white;
+  font-size: 12px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+.box-item p {
+  margin: 5px;
+  width: 145px;
+  font-size: 12px;
+  line-height: 18px;
 }
